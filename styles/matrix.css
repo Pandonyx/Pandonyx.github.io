@@ -118,7 +118,7 @@ body {
 /* Phones (portrait) */
 @media (max-width: 576px) {
   .matrix-container {
-    width: 95%;
+    width: 60%;
     padding: 0 5px;
   }
 
