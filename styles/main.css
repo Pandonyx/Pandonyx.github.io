@@ -14,6 +14,7 @@ body {
 }
 
 .matrix-header {
+    
     text-align: center;
     padding: 2rem;
     border-bottom: 1px solid var(--matrix-green);
@@ -40,13 +41,12 @@ body {
 }
 
 .matrix-image {
-    transform: translate(-20%, 50%);
+    display: block;
     
-    width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     border: 1px solid var(--matrix-green);
-    float: right;
-    margin-left: 0;
+    align-content: center;
+    margin: 0 auto;
     
 }
 
