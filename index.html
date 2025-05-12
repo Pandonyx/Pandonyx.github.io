@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter the Portfolio</title>
+    
+    <link rel="stylesheet" href="styles/matrix.css">
+</head>
+<audio id="matrix-audio" autoplay loop>
+  <source src="audio\Turf Wars.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  var audio = document.getElementById("matrix-audio");
+  
+  audio.volume = 0.05;
+</script>
+
+
+
+<body>
+    <div class="matrix-container">
+        <div id="matrix-text"></div>
+        <div id="cta-buttons" class="hidden">
+            <button id="enter-btn">Escape</button>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+:root {
+    --matrix-green: #00ff41;
+    --matrix-dark: #0d0208;
+    --matrix-text: #00ff41;
+}
+
+body {
+    background: var(--matrix-dark);
+    color: var(--matrix-text);
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.matrix-header {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid var(--matrix-green);
+    animation: fadeIn 1s ease-in;
+}
+
+.matrix-main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.matrix-section {
+    margin-bottom: 3rem;
+    animation: slideUp 0.8s ease-out;
+}
+
+.content-box {
+    background: rgba(0, 255, 65, 0.05);
+    border: 1px solid var(--matrix-green);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.1);
+}
+
+.matrix-image {
+    transform: translate(-20%, 50%);
+    
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid var(--matrix-green);
+    float: right;
+    margin-left: 0;
+    
+}
+
+.matrix-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.matrix-list li {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.skill-bar {
+    display: block;
+    height: 4px;
+    background: var(--matrix-green);
+    margin-top: 0.3rem;
+}
+
+.matrix-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.matrix-link {
+    color: var(--matrix-text);
+    text-decoration: none;
+    border: 1px solid var(--matrix-green);
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+.matrix-link:hover {
+    background: var(--matrix-green);
+    color: #000;
+}
+
+.matrix-footer {
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 1px solid var(--matrix-green);
+}
+
+.online {
+    color: var(--matrix-green);
+    text-shadow: 0 0 5px var(--matrix-green);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
